@@ -20,6 +20,12 @@ bun install
 bun run index.ts
 ```
 
+5. To run the tests:
+
+```bash
+bun test
+```
+
 ## Developer notes
 
 To prevent the `Too Many Requests` error given from the API when it gets hammered, I added an environment variable called `THROTTLE_MILLIS_BETWEEN_CALLS` that can be used to add time between network calls. The default value is 2000 millis, which usually makes all requests succeed.
