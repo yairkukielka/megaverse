@@ -34,7 +34,6 @@ export class ComethCell extends AstroCell {
 }
 
 export class SoloonCell extends AstroCell {
-  static endpoint: string = Bun.env.ENDPOINT_SOLOONS;
   color: string;
 
   constructor(row: number, column: number, color: string) {
