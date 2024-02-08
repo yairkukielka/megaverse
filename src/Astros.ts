@@ -14,12 +14,9 @@ export abstract class AstroCell implements IAstroCell {
   }
 }
 
-export class PolyanetCell extends AstroCell {
-  static endpoint: string = Bun.env.ENDPOINT_POLYANETS;
-}
+export class PolyanetCell extends AstroCell {}
 
 export class ComethCell extends AstroCell {
-  static endpoint: string = Bun.env.ENDPOINT_COMETHS;
   direction: string;
 
   constructor(row: number, column: number, direction: string) {
